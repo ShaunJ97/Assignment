@@ -1,0 +1,30 @@
+﻿@page
+@model Assignment.Pages.AdminPages.AdminIndexModel
+@{
+}
+
+<h1>:: Admin Page ::</h1>
+<br />
+
+<h2>Welcome @Model.FirstName</h2>
+
+<br />
+<div class="row">
+
+    <div class="col-sm-2">
+        <p><a asp-page="/Users/Create">Create a New User or Admin</a></p>
+    </div>
+
+    <div class="col-sm-2">
+        <p><a asp-page="/AdminPages/ViewUsers">View Existing Users or Admins of this website</a></p>
+    </div>
+
+    <div class="col-sm-2">
+        <p><a asp-page="/AdminPages/ViewEmployees">View Employees or Managers</a></p>
+    </div>
+
+    <div class="col-sm-2">
+        <p><a asp-page="/LogoutPage/Logout">Logout</a></p>
+    </div>
+
+</div>

@@ -1,0 +1,56 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Employee Management System</h1>
+    <h3 class="display-4">(EMS)</h3>
+</div>
+
+<div>
+    <img src = "~/Files/HomePageMain.jpg" />
+</div>
+
+<!-- divider section -->
+<div class="divider">
+    <div class="row">
+        <div class="col-4">
+            <a href="Login/Login">
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Log into your account here!</h2>
+                    <p style="text-align:center">Click this to access your account</p>
+                    <br>
+                    <br>
+                    <br>
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="Users/Create">
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Create a new user!</h2>
+                    <p style="text-align:center">If your an admin, click her to create a new user</p>
+                    <br>
+                    <br>
+                    <br>
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="AdminPages/ViewUsers">
+                    <br>
+                    <br>
+                    <br>
+                    <h2>View all users</h2>
+                    <p style="text-align:center">Click to see all registered users</p>
+                    <br>
+                    <br>
+                    <br>
+            </a>
+        </div>
+    </div>
+</div>

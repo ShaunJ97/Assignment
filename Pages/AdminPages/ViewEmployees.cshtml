@@ -1,0 +1,48 @@
+﻿@page
+@model Assignment.Pages.AdminPages.ViewEmployeesModel
+@{
+}
+
+<h1>:: View Employees ::</h1>
+<br />
+<h3> Hello: @Model.FirstName</h3>
+<br />
+
+
+
+
+<div>
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee First Name</th>
+                <th>Employee Last Name</th>
+                <th>Employee Date of Birth</th>
+                <th>Employee Hire Date</th>
+            </tr>
+        </thead>
+
+        @for (int i = 0; i < Model.Employee.Count; i++)
+        {
+            <tr>
+                <td>@Model.Employee[i].EmployeeId</td>
+                <td>@Model.Employee[i].EmployeeFirstName</td>
+                <td>@Model.Employee[i].EmployeeLastName</td>
+                <td>@Model.Employee[i].EmployeeDateHired</td>
+                <td>@Model.Employee[i].EmployeeDoB</td>
+            </tr>
+        }
+    </table>
+</div>
+
+<div>
+    <a target="_blank" asp-route-pdf="1">PDF Report</a>
+</div>
+
+<div>
+    <a asp-page="/AdminPages/EmployeeDept"></a>
+</div>
+<div>
+    <a asp-page="/AdminPages/AdminIndex">Back to Main Admin</a>
+</div>
